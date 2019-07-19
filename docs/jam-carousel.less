@@ -1,0 +1,141 @@
+[data-jam] {
+    width: 100%;
+    margin-top: 20px;
+
+    position: relative;
+    box-sizing: border-box;
+
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 3px;
+
+    > * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    > .firstFloor {
+        margin: 0 5px;
+
+        position: relative;
+
+        text-align: center;
+        overflow: hidden;
+
+        > .tapeWrap {
+            display: flex;
+            align-items: stretch;
+
+            padding: 25px 0;
+            position: relative;
+
+            > * {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-flow: column;
+                flex-shrink: 0;
+
+                margin: 0;
+                padding: 0;
+
+                position: relative;
+
+                overflow: hidden;
+                text-align: center;
+
+                transition: all 0.15s ease;
+
+                border-width: 3px;
+                border-style: solid;
+                border-radius: 7px;
+
+                user-select: none;
+                cursor: pointer;
+
+                > * {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                // &:hover {
+                //     box-shadow: 3px 3px 3px #999;
+                //     transform: scale(1.02);
+                // }
+
+                // &.active {
+                //     transform: scale(1.05);
+                //     cursor: default;
+                // }
+            }
+        }
+    }
+
+    > .secondFloor {
+        margin-top: 10px;
+
+        text-align: center;
+
+        > a {
+            display: inline-block;
+            padding: 1px 7px;
+
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 5px;
+
+            cursor: pointer;
+            user-select: none;
+
+            transition: all 0.1s ease;
+
+            &:hover {
+                transform: scale(1.07);
+            }
+
+            &.disabled {
+                visibility: hidden;
+                opacity: 0;
+            }
+
+            &.leftArrow {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    > .thirdFloor {
+        padding: 20px 0;
+        text-align: center;
+
+        > .dot {
+            display: inline-block;
+            vertical-align: middle;
+
+            margin: 0 7px;
+
+            opacity: 0.7;
+            border-width: 10px;
+            border-style: solid;
+            border-radius: 100%;
+
+            transition: all 0.1s ease;
+
+            cursor: pointer;
+            content: "";
+
+            &:hover {
+                opacity: 1;
+                transform: scale(1.35);
+            }
+
+            &.active {
+                opacity: 1;
+                transform: scale(1.35);
+            }
+
+        }
+    }
+}

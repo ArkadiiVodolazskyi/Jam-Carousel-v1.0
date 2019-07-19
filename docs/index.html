@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Link Jam styles -->
+    <link rel="stylesheet" href="jam-carousel.css">
+
+    <!-- Link user styles -->
+    <link rel="stylesheet" href="main.css">
+
+    <title>Jam Carousel | Home</title>
+</head>
+<body>
+
+    <!-- Initial Wrapper Template -->
+    <div class="wrapper">
+
+        <!-- First Jam -->
+
+        <div data-jam="jam1">
+
+            <img src="img/5.jpg" alt="">
+            <h1>Hello</h1>
+            <img src="img/0.jpg" alt="">
+            <span>I'm just a little span text.</span>
+            <img src="img/5.jpg" alt="">
+            <a href="#"><img src="img/2.jpg" alt=""></a>
+            <ul>
+                <h3>Shopping list:</h3>
+                <li>Eggs</li>
+                <li>Milk</li>
+                <li>Cookies</li>
+                <li>Kittycat</li>
+            </ul>
+            <input type="text" placeholder="Type something maybe..?">
+            <button>Imma big button!</button>
+            <div class="card">
+                <h3>Some title</h3>
+                <p>Some text some text some text some text some text. Some text some text some text some text some text. Some text some text some text some text some text. Some text some text some text some text some text.</p>
+            </div>
+            <img src="img/4.jpg" alt="">
+
+        </div>
+
+    </div>
+
+    <div class="docs">
+
+        <div class="left">
+            <div class="intro">
+                <h1 id="name">Jam Carousel Plugin</h1>
+
+                <h2>How to use</h2>
+                <ol>
+                    <li>1. Add to your project <span>jam-carousel.css</span> file and link it in the head part of your main html.</li>
+                    <li>2. Add to your project <span>jam-carousel.js</span> file and link it after the body part of your main html.</li>
+                    <li>3. Gather all needed elements to make Jam of inside some wrapper.</li>
+                    <li>4. Give this wrapper data attribute, named <span>data-jam</span>.</li>
+                    <li>5. Set to the data-jam attribute any value you want.</li>
+                    <li>6. Now add this part of script to your js:<br>
+                    <span>let jam1 = new Jam ({ data: "jam1" });</span><br>
+                    The <span>"jam1"</span> is the value, you have set for data-jam attribute in part 5.</li>
+                    <li>7. Make sure you have added the script from part 6 right after linking jam-carousel.js.</li>
+                    <li>8. You can also use some additional styling of your Jam - all the properties are listed nearby. Have fun!</li>
+                </ol>
+            </div>
+
+            <div class="example">
+                <h2>Eventually it should to be something like this (<span>example</span>).</h2>
+                <img src="img/example1.png" alt="Example of linking Jam code.">
+            </div>
+        </div>
+
+        <div class="right">
+            <h2>Jam's methods</h2>
+            <table>
+                <tr>
+                    <td>Property name</td>
+                    <td>Value type</td>
+                    <td>Default value</td>
+                    <td>Values range</td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td>data<br><span>Necessary field!</span></td>
+                    <td>String</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Sets a pointer to your Jam by it's data attribute value.</td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>String</td>
+                    <td>"20%"</td>
+                    <td>0 - inf</td>
+                    <td>Sets new width for all the elements inside Jam.</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>String</td>
+                    <td>"200px"</td>
+                    <td>0 - inf</td>
+                    <td>Sets new height for all the elements inside Jam.</td>
+                </tr>
+                <tr>
+                    <td>transition</td>
+                    <td>String</td>
+                    <td>"all 0.5s ease"</td>
+                    <td>-</td>
+                    <td>Sets new transition for Jam's tape.</td>
+                </tr>
+                <tr>
+                    <td>focus</td>
+                    <td>Number</td>
+                    <td>0</td>
+                    <td>From 0 to the number of elements in the Jam.</td>
+                    <td>Sets the index of the element, that will be in the center of the Jam after loading.</td>
+                </tr>
+            </table>
+
+            <h3>Created by <a href="https://github.com/ArkadiiVodolazskyi" id="human"><span>Arkadii Vodolazskyi.</span></a></h3>
+        </div>
+
+    </div>
+
+</body>
+    <script src="jam-carousel.js"></script>
+
+    <script>
+        let jam1 = new Jam ({
+
+            data: "jam1", // Data attribute value
+            width: "30%", // Width for all elements, % or px
+            height: "250px", // Height for all elements, px
+            transition: "all 0.5s ease", // Transition for tape
+            focus: 0, // What element will be in focus after loading
+
+        });
+    </script>
+</html>
