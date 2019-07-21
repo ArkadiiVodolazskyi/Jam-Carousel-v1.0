@@ -1,0 +1,97 @@
+.jam-wrap[data-jam] {
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border-style: solid;
+  border-width: 3px;
+}
+.jam-wrap[data-jam] > * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.jam-wrap[data-jam] > .firstFloor {
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.jam-wrap[data-jam] > .firstFloor > .tapeWrap {
+  display: flex;
+  align-items: stretch;
+  padding: 25px 0;
+  position: relative;
+}
+.jam-wrap[data-jam] > .firstFloor > .tapeWrap > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.15s ease;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 7px;
+  user-select: none;
+  cursor: pointer;
+}
+.jam-wrap[data-jam] > .firstFloor > .tapeWrap > * > * {
+  margin: 0;
+  padding: 0;
+}
+.jam-wrap[data-jam] > .secondFloor {
+  margin-top: 10px;
+  text-align: center;
+}
+.jam-wrap[data-jam] > .secondFloor > a {
+  display: inline-block;
+  padding: 1px 7px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.1s ease;
+}
+.jam-wrap[data-jam] > .secondFloor > a:hover {
+  transform: scale(1.07);
+}
+.jam-wrap[data-jam] > .secondFloor > a.disabled {
+  visibility: hidden;
+  opacity: 0;
+}
+.jam-wrap[data-jam] > .secondFloor > a.leftArrow {
+  margin-right: 15px;
+}
+.jam-wrap[data-jam] > .thirdFloor {
+  padding: 20px 0;
+  text-align: center;
+}
+.jam-wrap[data-jam] > .thirdFloor > .dot {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 7px;
+  opacity: 0.7;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 100%;
+  transition: all 0.1s ease;
+  cursor: pointer;
+  content: "";
+}
+.jam-wrap[data-jam] > .thirdFloor > .dot:hover {
+  opacity: 1;
+  transform: scale(1.35);
+}
+.jam-wrap[data-jam] > .thirdFloor > .dot.active {
+  opacity: 1;
+  transform: scale(1.35);
+}
